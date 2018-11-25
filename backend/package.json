@@ -1,0 +1,26 @@
+{
+    "name": "react-secured-jwt-authentification-example",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "client": "cd ../frontend && npm start",
+        "start": "nodemon server.js",
+        "dev": "concurrently --kill-others-on-fail \"npm start\" \"npm run client\""
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "bcrypt-nodejs": "0.0.3",
+        "body-parser": "^1.18.3",
+        "concurrently": "^4.1.0",
+        "cors": "^2.8.5",
+        "express": "^4.16.4",
+        "jwt-simple": "^0.5.5",
+        "mongoose": "^5.3.7",
+        "morgan": "^1.9.1",
+        "passport": "^0.4.0",
+        "passport-jwt": "^4.0.0",
+        "passport-local": "^1.0.0"
+    }
+}
